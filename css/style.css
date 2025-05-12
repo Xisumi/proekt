@@ -1,0 +1,1630 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    max-width: 100%;
+}
+
+.center {
+    justify-content: center;
+}
+
+.img-line2 {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: local('OpenSans-Light'),
+    url("../fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: local('OpenSans-SemiBold'),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.menu-header {
+    display: flex;
+    gap: 25px;
+}
+
+.header3 {
+    display: flex;
+    gap: 20px;
+}
+
+.header3 img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.menu-header p {
+    color: #0C0C0C;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.header1 p {
+    margin-top: 0px;
+    font-size: 13px;
+}
+
+.header4 {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #E3010F;
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #530006;
+
+}
+
+.header5 a{
+    color: #E3010F;
+    font-weight: 600;
+    font-size: 14px;
+}
+.header5 p{
+    margin-bottom: 0px;
+}
+
+.menu-header-nav {
+    display: flex;
+    gap: 68px;
+    margin-top: 13px;
+}
+
+.red {
+    color: #E3010F;
+    font-weight: 600;
+}
+
+.menu-header-nav a {
+    color: #0C0C0C;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu-header-nav a:hover{
+    text-decoration: underline;
+    color: #E3010F;
+    font-weight: 700;
+}
+
+.hero {
+    margin-top: 0px;
+    background-image: url(../img/fon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 717px;
+    
+}
+
+.hero-info {
+    margin-left: 420px;
+}
+
+.flex {
+    display: flex;
+}
+
+.hero-text .herop {
+    margin-top: -50px;
+}
+
+.hero-text{
+    padding-top: 40px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.herop2 {
+    gap: 10px;
+}
+
+.Belayakorobka {
+    width: 450px;
+    height: 200px;
+    background-color: #fff;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: -10px 10px 20px 1px #ebebeb;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.bl-h {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.Belayakorobka-text {
+    display: flex;
+    gap: 5px;
+    font-weight: 900;
+    justify-content: center;
+    margin-top: -25px;
+    margin-bottom: -20px;
+}
+
+.bl-input {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bl-input button {
+    width: 150px;
+    font-size: 14px;
+}
+
+.bl-input input {
+    width: 250px;
+    border: #E3010F 2px solid;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*Вся эта поебота с 1 сектором и шапкой выше, ничего не трогать ибо полетит нахуй*/
+
+/*Ниже уже хуярят микро карточки под 1 сектором*/
+
+.cards {
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 45px;
+    justify-content: center;
+    margin-bottom: 45px;
+    gap: 45px;
+}
+
+.card {
+    width: 230px;
+    height: 150px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px 1px #dbdbdb;
+}
+
+.card img{
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+
+/*Ниже уже итуд микро карточки под 2 сектором*/
+
+.kyhni {
+    margin-top: 0px;
+    background-image: url(../img/fon2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 3000px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -750px;
+}
+
+.kyhni-text .herop {
+    margin-top: -50px;
+}
+
+.kyhni-text{
+    padding-top: 40px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 420px;
+}
+
+.gray {
+    color: #4B4B4B;
+}
+
+
+
+.uj {
+    display: flex;
+    gap: 5px;
+    margin-left: 30px;
+}
+
+.uj .red {
+    font-size: 20px;
+    margin-top: 13px;
+    font-weight: 900;
+}
+
+.perecher {
+    text-decoration: line-through;
+}
+
+.kyhni-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-left: 30px;
+}
+
+.belaz-btn {
+    color: #0C0C0C;
+    background-color: #fff;
+    border: 1px solid red;
+}
+
+.belaz-btn:hover {
+    color: #fff;
+    border: none;
+}
+
+.odna-kyhnia {
+    background-color: #ffffff;
+    width: 349px;
+    border-radius: 20px;
+    height: 580px;
+    box-shadow: 0px 5px 20px 1px #c4c4c4;
+}
+
+.odna-kyhnia-hr {
+    margin-left: 0px;
+}
+
+.mnogo-k {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 100px;
+    margin-left: 420px;
+}
+
+
+/*модели кухонь*/
+.uc {
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.uc .red {
+    font-size: 20px;
+    margin-top: 13px;
+    font-weight: 900;
+}
+.model-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-left: 20px;
+}
+
+.belaz-btn {
+    color: #0C0C0C;
+    background-color: #fff;
+    border: 1px solid red;
+}
+
+.belaz-btn:hover {
+    color: #fff;
+    border: none;
+}
+
+.kmodel-text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 420px;
+}
+
+.kmodel-text p {
+    margin-top: -30px;
+}
+
+.model-text {
+    display: flex;
+    gap: 7px;
+    font-size: 20px;
+    margin-left: 420px;
+    margin-top: -30px;
+}
+
+
+.perecher {
+    text-decoration: line-through;
+}
+
+
+
+.mcs {
+    background-color: #ffffff;
+    width: 349px;
+    border-radius: 20px;
+    height: 440px;
+    box-shadow: 0px 5px 20px 1px #c4c4c4;
+}
+
+.odna-model-hr {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.model-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+    margin-left: 420px;
+}
+
+/*Дизайнер*/
+
+.diz-main {
+    display: flex;
+    justify-content: center;
+}
+
+.diz-ltext {
+    box-shadow: 0px 5px 20px 1px #c4c4c4;
+    margin-top: 5px;
+    gap: 5px;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 70px;
+    width: 570px;
+}
+
+.diz-ltext p{
+    margin-top: 25px;
+}
+
+.diz-h {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.diz-h .red {
+    margin-top: -30px;
+}
+
+.pdr {
+    font-size: 18px;
+}
+
+.dizr {
+    gap: 15px;
+}
+
+.diz-right {
+    margin-left: 40px;
+}
+
+.diz-left img {
+    box-shadow: 0px 5px 20px 1px #c4c4c4;
+    border-radius: 15px;
+    margin-right: 90px;
+}
+
+.diz-forma {
+    flex-direction: column;
+    box-shadow: 0px 5px 20px 1px #c4c4c4;
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 15px;
+    justify-content: center;
+    gap: 7px;
+}
+
+.diz-forma button {
+    width: 270px;
+    margin-left: 13px;
+    height: 50px;
+}
+
+.diz-forma input {
+    width: 270px;
+    margin-left: 13px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/*Дизайнер летит нахуй(как и моя психика)*/
+
+.dop-h {
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 420px;
+}
+
+.dop-h1, .dop-h2 {
+    gap: 10px;
+    display: flex;
+}
+
+.dop-h2 {
+    margin-top: -80px;
+}
+
+.dop-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-left: 20px;
+}
+
+.dop-btn button {
+    width: 250px;
+}
+
+
+.mcs-dop {
+    background-color: #ffffff;
+    width: 349px;
+    border-radius: 20px;
+    height: 360px;
+    box-shadow: 0px 5px 20px 1px #c4c4c4;
+}
+
+.odna-dop-hr {
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.dop-main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 40px;
+        margin-left: 420px;
+}
+
+.dop {
+    margin-top: 0px;
+    background-image: url(../img/fon3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    
+}
+
+/*Допы усё*/
+
+.pochemy-text{
+    display: flex;
+    gap: 10px;
+    padding-top: 40px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 420px;
+}
+
+.mcs-pochemy {
+    background-color: #ffffff;
+    width: 345px;
+    border-radius: 20px;
+    height: 280px;
+    box-shadow: 0px 5px 20px 1px #e6e6e6;
+}
+
+.odna-pochemy-hr {
+    margin-left: 5px;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.pochemy-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+    margin-left: 420px;
+}
+
+.pochemy-btn button {
+    width: 380px;
+}
+
+.pochemy-btn {
+    text-align: center;
+    margin-top: 55px;
+}
+
+/*poch усё*/
+
+.idky-h {
+    display: flex;
+    gap: 10px;
+    margin-bottom: -15px;
+}
+
+.odna-idky-hr a{
+    color: red;
+}
+
+.odna-idky-hr p {
+    line-height: 24px;
+}
+
+.mcs-idky {
+    background-color: #ffffff;
+    width: 349px;
+    border-radius: 20px;
+    height: 320px;
+    box-shadow: 0px 5px 20px 1px #bdbdbd;
+}
+
+.odna-idky-hr {
+    margin-left: 5px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.idky-cards-down, .idky-cards-up {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.pochemy-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+    margin-left: 420px;
+}
+
+.idky {
+    margin-top: 0px;
+    background-image: url(../img/fon4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1100px;
+}
+
+/*idky усё*/
+
+.otziv {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 1070px;
+    border-radius: 20px;
+    height: 350px;
+    box-shadow: 0px 5px 20px 1px #bdbdbd;
+    gap: 55px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.otzivi-main {
+    justify-content: center;
+    display: flex;
+}
+
+.ot-trxt {
+    font-size: 15px;
+}
+
+.otziv-left button {
+    width: 300px;
+}
+
+.otziv-left, .otziv-right {
+    margin-top: 30px;
+}
+
+.otziv-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.otzivi {
+    margin-bottom: 150px;
+}
+
+/*otziv усё*/
+
+.vopros-text {
+    font-size: 45px;
+    text-align: center;
+    
+}
+
+.vopros-text p {
+  margin-bottom: 0px;
+}
+
+.vopros-main {
+    width: 1100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+    
+}
+
+.v-main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.vopros-card  {
+    box-shadow: 0px 5px 20px 1px #c9c9c9;
+    background-color: #ffffff;
+    width: 270px;
+    border-radius: 15px;
+    height: 90px;
+    margin-top: 80px
+}
+
+.vopros-card1 {
+    box-shadow: 0px 5px 20px 1px #c9c9c9;
+    background-color: #ffffff;
+    width: 270px;
+    border-radius: 15px;
+    height: 90px;
+    margin-top: 160px
+}
+
+.vh, .vh1 {
+    display: flex;
+    gap: 20px;
+    padding-top: 0px;
+    margin-left: 15px
+}
+
+.vh1 {
+    padding-top: 20px;
+}
+
+.two {
+    text-align: center;
+    padding-top: 60px;
+    font-size: 20px;
+}
+
+.nomer-text {
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.nomer {
+    background-color: #e7e7e7;
+    height: 250px;
+    margin-bottom: 400px;
+}
+
+.nomer-text .bl-input input {
+    border-color:  #fff;
+}
+
+.contakt-text {
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 400px;
+    margin-top: -300px;
+}
+
+
+.contacti-ad {
+    background-image: url(../img/fon6.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    border: #ffffff solid 1px;
+    margin-top: -300px;
+}
+
+.bel-corobka {
+   background-color: #ffffff;
+   width: 350px;
+   height: 200px;
+   padding-top: 1px;
+   padding-left: 10px;
+   margin-top: 100px;
+   margin-left: 340px;
+}
+
+.contakt {
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: #e2e2e2;
+    display: flex;
+    gap: 200px;
+    padding-left: 300px;
+    color: #686868;
+    height: 100px;
+    padding-top: 30px;
+}
+
+.fo {
+    display: flex;
+    gap: 20px;
+}
+
+.burger {
+    display: none;
+}
+
+@keyframes slideIn {
+    from {transform: translateX(100%); opacity: 0;}
+    to { transform: translateX(0); opacity: 1;}
+}
+.menua {
+    animation: slideIn 0.3s ease-out;
+}
+
+
+@media (min-width: 360px) and (max-width: 575px) {
+    .kyhni {
+        margin-bottom: -900px;
+    }
+    .kyhni-text {
+        margin-left: 20px;
+    }
+    .mnogo-k {
+        margin-top: -10px;
+        margin-left: 5px;
+    }
+    .k4, .k5, .k6, .k7, .k8, .k9 {
+        display: none;
+    }
+    footer {
+        margin-left: 0px;
+        padding-left: 15px;
+        gap: 10px;
+        flex-direction: column;
+        padding-top: -30px;
+    }
+    .contakt {
+        margin-top:-30px ;
+        margin-bottom: -40px;
+    }
+    .bel-corobka {
+        margin-left: 10px;
+        font-size: 15px
+    }
+    .contakt-text {
+        margin-bottom: 200px;
+        font-size: 35px;
+    }
+    .nomer-text {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .thee, .one {
+        display: none;
+    }
+    .vopros-text {
+        font-size: 35px;
+    }
+    .idky {
+        margin-bottom: 1000px;
+    }
+    .otziv-right {
+        display: none;
+    }
+    .otziv-left {
+        margin-left: 10px;
+    }
+    .pochemy-btn {
+        width: 90%;
+        margin-left: 17px;
+        margin-bottom: 100px;
+    }
+    .pochemy-text {
+        font-size: 20px;
+    }
+    .pochemy {
+        margin-top: 600px;
+    }
+    .pochemy-text, .pochemy-cards {
+        margin-left: 5px;
+    }
+    .dop-h1, .dop-h2 {
+        font-size: 23px;
+        margin-top: -35px;
+    }
+    .dop-main, .dop-h {
+        margin-left: 5px;
+    }
+    .dizain {
+        margin-bottom: 150px;
+    }
+    .diz-forma {
+        margin-right: 15px;
+    }
+    .dizr p {
+        font-size: 13px;
+    }
+    .diz-ltext {
+        font-size: 15px;
+    }
+    .diz-main {
+        flex-direction: column;
+    }
+    .kyhni-text {
+        font-size: 35px;
+    }
+    .kmodel-text {
+        font-size: 35px;
+    }
+    .model-text {
+        font-size: 15px;
+    }
+    .model {
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    .model-text, .kmodel-text, .model-cards {
+        margin-left: 0;
+    }
+    .bl-input {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .bl-input input {
+        height: 53px;
+        margin-left: 40px;
+    }
+
+    .bl-input button {
+        margin-left: 90px;
+    }
+
+    .Belayakorobka {
+        width: 340px;
+        height: 300px;
+        padding-top: 15px;
+    }
+    .hero-text {
+        font-size: 30px;
+    }
+    .herop2 {
+        margin-top: -10px;
+    }
+
+    .hero-info {
+        margin-left: 10px;
+    }
+    .menu-header button {
+        width: 120px;
+    }
+    .menu-header {
+        text-align: center;
+    }
+    .header2, .header3, .header5, .img {
+        display: none;
+    }
+    .menu-header-nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+        justify-content: center;
+    }
+    .imdh {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        margin-left: 10px;
+        margin-top: 30px;
+        
+    } 
+    .burger input {
+        display: none;
+    }
+    .menua {
+        font-size: 20px;
+        width: 280px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 140px;
+        right: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        border: 3px solid red;
+        padding: 5px;
+    }   
+
+    .menua a {
+        color: #0C0C0C;
+    }
+
+    #menu-toggle:checked ~ .menua {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .imdh, .imdh1, .header5, .menu-header-nav {
+        display: none;
+    }
+    .menu-header {
+        flex-wrap: wrap;
+        margin-left: 0px;
+        gap: 15px; 
+        background-color: #fff;
+    }
+    .menu-header button {
+        margin-right: 300px; 
+        
+    }
+    .hero-info {
+        margin-left: 20px;
+    }
+    .hero-text {
+        font-size: 40px;
+    }
+    .Belayakorobka {
+        margin-left: 40px;
+        box-shadow: 0px 5px 20px 1px #bdbdbd;
+        box-sizing: 40px;
+        margin-top: 60px;
+    }
+    .hero {
+        margin-top: 0px;
+        background-image: url(../img/fon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+        margin-bottom: 260px;
+    }
+    .card {
+        box-shadow: 0px 5px 20px 1px #bdbdbd;
+    }
+    .kyhni-text {
+        margin-left: 20px;
+    }
+    .k4, .k5, .k6, .k7, .k8, .k9 {
+        display: none;
+    }
+    .kyhni-text {
+        font-size: 40px;
+        margin-top: -60px;
+    }
+    .kyhni {
+        margin-bottom: -1000px;
+    }
+    .mnogo-k {
+        margin-left: 110px;
+        margin-top: 0px;
+    }
+    footer {
+        margin-left: 0px;
+        padding-left: 15px;
+        gap: 30px;
+        flex-direction: column;
+        padding-top: -30px;
+        height: 200px;
+    }
+    .contakt {
+        margin-top:-30px ;
+        margin-bottom: -40px;
+    }
+    .bel-corobka {
+        margin-left: 10px;
+        font-size: 15px
+    }
+    .contakt-text {
+        margin-bottom: 200px;
+        font-size: 35px;
+    }
+    .nomer-text {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .thee, .one {
+        display: none;
+    }
+    .vopros-text {
+        font-size: 35px;
+    }
+    .idky {
+        margin-bottom: 1000px;
+        margin-top: 0px;
+    }
+    .otziv-right {
+        display: none;
+    }
+    .otziv-left {
+        margin-left: 10px;
+    }
+    .mcs-pochemy {
+        margin-left: 90px
+    }
+    .pochemy-btn {
+        width: 90%;
+        margin-left: 17px;
+        margin-bottom: 100px;
+    }
+    .pochemy-text {
+        font-size: 30px;
+    }
+    .pochemy {
+        margin-top: 700px;
+    }
+    .pochemy-text, .pochemy-cards {
+        margin-left: 20px;
+    }
+    .mcs-dop {
+        margin-left: 90px;
+    }
+    .dop-h1, .dop-h2 {
+        font-size: 35px;
+        margin-top: -55px;
+    }
+    .dop-main, .dop-h {
+        margin-left: 20px;
+    }
+    .dizain {
+        margin-bottom: 130px;
+    }
+    .pdr {
+        font-size: 20px; 
+    }
+    .dizr p {
+        font-size: 20px;
+    }
+    .diz-ltext {
+        font-size: 20px;
+        padding-left: 40px;
+    }
+    .diz-main {
+        flex-direction: column;
+    }
+    .kyhni-text {
+        font-size: 35px;
+    }
+    .kmodel-text {
+        font-size: 38px;
+    }
+    .model-text {
+        font-size: 20px;
+    }
+    .model {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+    .model-cards {
+        margin-left: 90px;
+    }
+
+    .model-text, .kmodel-text {
+        margin-left: 0px;
+    }
+
+    .burger {
+        display: block;
+        justify-content: center;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        margin-left: 10px;
+        margin-top: 30px;
+        
+    } 
+    .burger input {
+        display: none;
+    }
+    .menua {
+        font-size: 20px;
+        width: 280px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 140px;
+        right: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        border: 3px solid red;
+        padding: 5px;
+    }   
+
+    .menua a {
+        color: #0C0C0C;
+    }
+
+    #menu-toggle:checked ~ .menua {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .k4, .k5, .k6, .k7, .k8, .k9 {
+        display: none;
+    }
+    .imdh, .imdh1, .header5, .menu-header-nav {
+        display: none;
+    }
+    .menu-header {
+        flex-wrap: wrap;
+        margin-left: 0px;
+        gap: 25px; 
+        background-color: #fff;
+    }
+    .hero-info {
+        margin-left: 20px;
+    }
+    .hero-text {
+        font-size: 40px;
+    }
+    .Belayakorobka {
+        margin-left: 140px;
+        box-shadow: 0px 5px 20px 1px #bdbdbd;
+        box-sizing: 40px;
+        margin-top: 60px;
+    }
+    .hero {
+        margin-top: 0px;
+        background-image: url(../img/fon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+        margin-bottom: 260px;
+    }
+    .card {
+        box-shadow: 0px 5px 20px 1px #bdbdbd;
+    }
+    .kyhni-text {
+        font-size: 60px;
+        margin-top: -60px;
+        margin-left: 20px;
+        
+    }
+    .kyhni {
+        margin-bottom: -1000px;
+    }
+    .mnogo-k {
+        margin-left: 190px;
+        margin-top: 0px;
+    }
+    footer {
+        margin-left: 0px;
+        padding-left: 15px;
+        gap: 30px;
+        flex-direction: column;
+        padding-top: -30px;
+        height: 200px;
+    }
+    .contakt {
+        margin-top:-30px ;
+        margin-bottom: -40px;
+    }
+    .bel-corobka {
+        margin-left: 10px;
+        font-size: 15px
+    }
+    .contakt-text {
+        margin-bottom: 200px;
+        font-size: 35px;
+    }
+    .nomer-text {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .thee, .one {
+        display: none;
+    }
+    .vopros-text {
+        font-size: 35px;
+    }
+    .idky {
+        margin-bottom: 300px;
+        margin-top: 0px;
+    }
+    .otziv-right {
+        display: none;
+    }
+    .otziv-left {
+        margin-left: 10px;
+    }
+    .mcs-pochemy {
+        margin-left: 90px
+    }
+    .pochemy-btn {
+        width: 90%;
+        margin-left: 17px;
+        margin-bottom: 100px;
+    }
+    .pochemy-text {
+        font-size: 30px;
+    }
+    .pochemy {
+        margin-top: 700px;
+    }
+    .pochemy-cards {
+        margin-left: 105px;
+    }
+    .pochemy-text {
+        margin-left: 20px;
+    }
+    .mcs-dop {
+        margin-left: 180px;
+    }
+    .dop-h1, .dop-h2 {
+        font-size: 35px;
+        margin-top: -55px;
+    }
+    .dop-main, .dop-h {
+        margin-left: 20px;
+    }
+    .dizain {
+        margin-bottom: 130px;
+    }
+    .pdr {
+        font-size: 20px; 
+    }
+    .dizr p {
+        font-size: 20px;
+    }
+    .diz-left {
+        margin-left: 80px;
+    }
+    .diz-right {
+        margin-left: 80px;
+    }
+    .diz-ltext {
+        font-size: 20px;
+        padding-left: 40px;
+    }
+    .diz-main {
+        flex-direction: column;
+    }
+    .kyhni-text {
+        font-size: 35px;
+    }
+    .kmodel-text {
+        font-size: 38px;
+    }
+    .model-text {
+        font-size: 20px;
+    }
+    .model {
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 140px;
+    }
+    .model-cards {
+        margin-left: 170px;
+    }
+
+    .model-text, .kmodel-text {
+        margin-left: 0px;
+    }
+
+    .burger {
+        display: block;
+        justify-content: center;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        margin-left: 20px;
+        margin-top: 30px;
+        
+    } 
+    .burger input {
+        display: none;
+    }
+    .menua {
+        font-size: 20px;
+        width: 280px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 140px;
+        right: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        border: 3px solid red;
+        padding: 5px;
+    }   
+
+    .menua a {
+        color: #0C0C0C;
+    }
+
+    #menu-toggle:checked ~ .menua {
+        display: flex;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1119px)  {
+     .k5, .k6, .k7, .k8, .k9 {
+        display: none;
+    }
+    .menu-header-nav {
+        display: none;
+    }
+    .menu-header {
+        flex-wrap: wrap;
+        margin-left: 0px;
+        gap: 5px; 
+        background-color: #fff;
+    }
+    .hero-info {
+        margin-left: 20px;
+    }
+    .hero-text {
+        font-size: 45px;
+    }
+    .Belayakorobka {
+        margin-left: 0px;
+        box-shadow: 0px 5px 20px 1px #bdbdbd;
+        box-sizing: 40px;
+        margin-top: 60px;
+    }
+    .hero {
+        margin-top: 0px;
+        background-image: url(../img/fon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+        margin-bottom: 260px;
+    }
+    .card {
+        box-shadow: 0px 5px 20px 1px #bdbdbd;
+    }
+    .kyhni-text p {
+        font-size: 45px;
+        margin-top: -60px;
+        margin-left: -400px;
+        
+    }
+    .kyhni {
+        margin-bottom: -1600px;
+    }
+    .mnogo-k {
+        margin-left: 130px;
+        margin-top: 0px;
+    }
+    footer {
+        margin-left: 0px;
+        padding-left: 15px;
+        gap: 30px;
+        flex-direction: column;
+        padding-top: -30px;
+        height: 200px;
+    }
+    .contakt {
+        margin-top:-30px ;
+        margin-bottom: -40px;
+    }
+    .bel-corobka {
+        margin-left: 10px;
+        font-size: 15px
+    }
+    .contakt-text {
+        margin-bottom: 230px;
+        font-size: 35px;
+    }
+    .nomer-text {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    
+    .vopros-text {
+        font-size: 35px;
+    }
+    .idky {
+        margin-bottom: 300px;
+        margin-top: 0px;
+    }
+    .o1 {
+        display: none;
+    }
+    .otziv-left {
+        margin-left: 10px;
+    }
+    .pochemy-cards {
+        margin-left: 20px;
+    }
+    .pochemy-btn {
+        width: 90%;
+        margin-left: 17px;
+        margin-bottom: 100px;
+    }
+    .pochemy-text {
+        font-size: 45px;
+    }
+    .pochemy {
+        margin-top: 300px;
+    }
+    .pochemy-cards {
+        margin-left: 105px;
+    }
+    .pochemy-text {
+        margin-left: 20px;
+    }
+    .dop-main {
+        padding-left: 100px;
+    }
+    .dop-h1, .dop-h2 {
+        font-size: 35px;
+        margin-top: -55px;
+    }
+    .dop-main, .dop-h {
+        margin-left: 20px;
+    }
+    .dizain {
+        margin-bottom: 130px;
+    }
+    .pdr {
+        font-size: 15px; 
+    }
+    .dizr p {
+        font-size: 15px;
+    }
+    .diz-left {
+        width: 40%;
+        padding-top: 30px;
+    }
+    .diz-main {
+        gap: 30px;
+        flex-direction: row;
+        margin-left: 80px;
+    }
+    .diz-right {
+        width: 50%;
+        
+    }
+    .diz-ltext {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    .kyhni-text {
+        font-size: 35px;
+    }
+    .kmodel-text {
+        font-size: 38px;
+    }
+    .model-text {
+        font-size: 20px;
+    }
+    .model {
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 140px;
+    }
+    .model-cards {
+        margin-left: 110px;
+    }
+
+    .model-text, .kmodel-text {
+        margin-left: 0px;
+    }
+
+    .burger {
+        display: block;
+        justify-content: center;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        margin-left: 20px;
+        margin-top: 30px;
+        
+    } 
+    .burger input {
+        display: none;
+    }
+    .menua {
+        font-size: 20px;
+        width: 280px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 140px;
+        right: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        border: 3px solid red;
+        padding: 5px;
+    }   
+
+    .menua a {
+        color: #0C0C0C;
+    }
+
+    #menu-toggle:checked ~ .menua {
+        display: flex;
+    }
+  }
+
+
+  
